@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PersInfo</string>
+    <string name="enter_your_name">enter your name...</string>
+    <string name="insert">Insert</string>
+</resources>
