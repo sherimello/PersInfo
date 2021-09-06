@@ -3,4 +3,6 @@
     <string name="enter_your_name">enter your name...</string>
     <string name="insert">Insert</string>
     <string name="about_you">about you:</string>
+    <string name="dummy1">dummy1</string>
+    <string name="reset">reset</string>
 </resources>

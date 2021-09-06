@@ -27,6 +27,7 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:layout_toStartOf="@id/button_insert"
+            android:autofillHints="name"
             android:background="#FFFFFF"
             android:drawableStart="@drawable/pencil"
             android:drawablePadding="7dp"
@@ -58,7 +59,6 @@
         android:text="@string/about_you"
         android:textColor="#72012d"
         android:textSize="23sp"
-
         android:textStyle="italic|bold" />
 
     <androidx.cardview.widget.CardView
@@ -78,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="11dp"
+            android:animateLayoutChanges="true"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -86,36 +87,55 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="7dp"
-                android:text="dummy1" />
+                android:text="@string/dummy1" />
 
             <TextView
                 android:id="@+id/text_age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="7dp"
-                android:text="dummy1" />
+                android:text="@string/dummy1" />
 
             <TextView
                 android:id="@+id/text_personality"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="7dp"
-                android:text="dummy1" />
+                android:text="@string/dummy1" />
 
             <TextView
                 android:id="@+id/text_live"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="7dp"
-                android:text="dummy1" />
+                android:text="@string/dummy1" />
 
             <TextView
                 android:id="@+id/text_hobby"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="7dp"
-                android:text="dummy1" />
+                android:text="@string/dummy1" />
         </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="11dp"
+        app:cardCornerRadius="1000dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:cardElevation="11dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/reset"
+            android:contentDescription="@string/reset" />
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
